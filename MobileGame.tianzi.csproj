@@ -163,7 +163,7 @@
     <Content Include="Repository\Acode.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MobileGame.Core\MobileGame.Core\MobileGame.Core.csproj">
+    <ProjectReference Include="..\..\MobileGame.Core\MobileGame.Core\MobileGame.Core.csproj">
       <Project>{a7b33e0b-4130-4bac-bee7-5ad8f4fabf1b}</Project>
       <Name>MobileGame.Core</Name>
     </ProjectReference>
