@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE2A56E6-1EF5-4E36-945C-717A46890D86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MobileGame.tianzi</RootNamespace>
+    <AssemblyName>MobileGame.tianzi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\MobileGame.tianzi.xml</DocumentationFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoWarn>1591</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Assembly\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\Assembly\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Utility.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="ConfigStruct\SysHeroCfg.cs" />
+    <Compile Include="ConfigStruct\SysExtractPrecCfg.cs" />
+    <Compile Include="ConfigStruct\SysConcubineCfg.cs" />
+    <Compile Include="ConfigStruct\SysLevelCfg.cs" />
+    <Compile Include="ConfigStruct\SysRechargeCfg.cs" />
+    <Compile Include="ConfigStruct\SysTreeCfg.cs" />
+    <Compile Include="ConfigStruct\SysUserUpgradeCfg.cs" />
+    <Compile Include="ConfigStruct\SysEquipAdvancedCfg.cs" />
+    <Compile Include="ConfigStruct\SysEquipUpgradeCfg.cs" />
+    <Compile Include="ConfigStruct\SysHeroAdvancedCfg.cs" />
+    <Compile Include="ConfigStruct\SysSkillUpgradeCfg.cs" />
+    <Compile Include="ConfigStruct\SysVipCfg.cs" />
+    <Compile Include="ConfigStruct\SysBuyNumCfg.cs" />
+    <Compile Include="ConfigStruct\SysEquipMeltingCfg.cs" />
+    <Compile Include="ConfigStruct\SysSkillCfg.cs" />
+    <Compile Include="ConfigStruct\SysEquipCfg.cs" />
+    <Compile Include="ConfigStruct\SysArmyCfg.cs" />
+    <Compile Include="ConfigStruct\SysArmyUpgradeCfg.cs" />
+    <Compile Include="ConfigStruct\SysToolCfg.cs" />
+    <Compile Include="ConfigStruct\SysNpcHeroCfg.cs" />
+    <Compile Include="ConfigStruct\SysNpcCfg.cs" />
+    <Compile Include="ConfigStruct\SysPkCfg.cs" />
+    <Compile Include="ConfigStruct\SysPkBoxCfg.cs" />
+    <Compile Include="ConfigStruct\SysPetCfg.cs" />
+    <Compile Include="ConfigStruct\SysBuildingCfg.cs" />
+    <Compile Include="ConfigStruct\SysConcubineTitleCfg.cs" />
+    <Compile Include="ConfigStruct\SysConcubineTalentCfg.cs" />
+    <Compile Include="ConfigStruct\SysConcubineFavorCfg.cs" />
+    <Compile Include="ConfigStruct\SysBattleCfg.cs" />
+    <Compile Include="ConfigStruct\SysNpcFormationCfg.cs" />
+    <Compile Include="ConfigStruct\SysCityCfg.cs" />
+    <Compile Include="ConfigStruct\SysAreaCfg.cs" />
+    <Compile Include="ConfigStruct\SysBigMapCfg.cs" />
+    <Compile Include="ConfigStruct\SysTaskCfg.cs" />
+    <Compile Include="ConfigStruct\SysVisitorCfg.cs" />
+    <Compile Include="ConfigStruct\SysBigMapActivity.cs" />
+    <Compile Include="ConfigStruct\SysShopPrecCfg.cs" />
+    <Compile Include="ConfigStruct\SysStoryCfg.cs" />
+    <Compile Include="ConfigStruct\SysFlopCfg.cs" />
+    <Compile Include="ConfigStruct\SysTitleCfg.cs" />
+    <Compile Include="ConfigStruct\SysTitleNameCfg.cs" />
+    <Compile Include="ConfigStruct\SysBigMapHeroCfg.cs" />
+    <Compile Include="ConfigStruct\SysLevelHeroCfg.cs" />
+    <Compile Include="ConfigStruct\SysPkHeroCfg.cs" />
+    <Compile Include="ConfigStruct\SysShopCfg.cs" />
+    <Compile Include="ConfigStruct\SysRedCodeCfg.cs" />
+    <Compile Include="ConfigStruct\SysActivityCfg.cs" />
+    <Compile Include="ConfigStruct\SysDiabloCfg.cs" />
+    <Compile Include="ConfigStruct\SysDiabloHeroCfg.cs" />
+    <Compile Include="ConfigStruct\SysDiabloStoryCfg.cs" />
+    <Compile Include="ConfigStruct\SysConcubineUpgradeCfg.cs" />
+    <Compile Include="Entity\UserDeflower.cs" />
+    <Compile Include="Entity\UserFormation.cs" />
+    <Compile Include="Entity\UserHero.cs" />
+    <Compile Include="Entity\UserFriend.cs" />
+    <Compile Include="Entity\UserLevels.cs" />
+    <Compile Include="Entity\UserTool.cs" />
+    <Compile Include="Entity\UserEquip.cs" />
+    <Compile Include="Entity\UserChip.cs" />
+    <Compile Include="Entity\UserExtract.cs" />
+    <Compile Include="Entity\UserConcubine.cs" />
+    <Compile Include="Entity\UserPk.cs" />
+    <Compile Include="Entity\ServerPkNpc.cs" />
+    <Compile Include="Entity\AllBattle.cs" />
+    <Compile Include="Entity\UserPet.cs" />
+    <Compile Include="Entity\ServerData.cs" />
+    <Compile Include="Entity\UserBuilding.cs" />
+    <Compile Include="Entity\ServerMapCity.cs" />
+    <Compile Include="Entity\UserCity.cs" />
+    <Compile Include="Entity\BattleRound.cs" />
+    <Compile Include="Entity\UserTask.cs" />
+    <Compile Include="Entity\UserTree.cs" />
+    <Compile Include="Entity\UserVisit.cs" />
+    <Compile Include="Entity\ServerMapCityActivity.cs" />
+    <Compile Include="Entity\ServerPkBeAttacking.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Interceptor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\FriendRepository.cs" />
+    <Compile Include="Repository\HeroRepository.cs" />
+    <Compile Include="Repository\LevelRepository.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
+    <Compile Include="Repository\BagRepository.cs" />
+    <Compile Include="Repository\ExtractRepository.cs" />
+    <Compile Include="Repository\EquipRepository.cs" />
+    <Compile Include="Repository\PkRepository.cs" />
+    <Compile Include="Repository\FormationRepository.cs" />
+    <Compile Include="Repository\ConcubineRepository.cs" />
+    <Compile Include="Repository\BigMapRepository.cs" />
+    <Compile Include="Repository\TaskRepository.cs" />
+    <Compile Include="Repository\ArmyRepository.cs" />
+    <Compile Include="Repository\BigMapRepository2.cs" />
+    <Compile Include="ResourceId.cs" />
+    <Compile Include="Tasks\MidnightTask.cs" />
+    <Compile Include="Tasks\BigMapActivityTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ConfigStruct\Acode.txt" />
+    <Content Include="Entity\Acode.txt" />
+    <Content Include="Repository\Acode.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MobileGame.Core\MobileGame.Core\MobileGame.Core.csproj">
+      <Project>{a7b33e0b-4130-4bac-bee7-5ad8f4fabf1b}</Project>
+      <Name>MobileGame.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

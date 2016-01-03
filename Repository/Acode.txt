@@ -1,0 +1,38 @@
+﻿
+	接口类型								文件名			    接口开始编号
+	用户								UserRepository				1000
+	英雄								HeroRepository				2000
+	好友								FriendRepository			3000
+	用户背包							BagRepository				4000
+	抽奖/新手引导						ExtractRepository			5000
+	装备								EquipRepository				6000
+	竞技场								PkRepository				7000
+	布阵								FormationRepository			8000
+	妃子/后宫							ConcubineRepository			9000
+	副本								LevelRepository				10000
+	大地图								BigMapRepository/BigMapRepository2(文件太大拆分下)			11000
+	任务/登录奖励/充值奖励/充值			TaskRepository				12000
+	兵营								ArmyRepository				13000
+
+	
+if(cfg == null) throw new Exception(string.Format("SysHeroCfg:Id:{0}",HeroId));
+
+
+	#region 7001 购买竞技场次数
+	/// <summary>
+    /// 购买竞技场次数
+    /// </summary>
+    [GameCode(OpCode = 7001)]
+    public class BuyPkNumRequest : GameHandler
+    {
+        public override void Process(GameContext context)
+        {
+        }
+    }
+    #endregion
+
+	
+            var logItem = new GameLogItem();
+            logItem.F1 = 1;
+            GameLogManager.CommonLog(Request.OpCode, CurrentUserId, 0, logItem);
+
